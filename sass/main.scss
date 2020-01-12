@@ -16,8 +16,12 @@
 
 // 4. Import the rest of Bulma
 
-.icon {
-  margin-right: 3px !important;
+@import "../node_modules/bulma/bulma";
+
+.button .icon:first-child:last-child {
+  margin-right: 3px;
 }
 
-@import "../node_modules/bulma/bulma";
+.content h6 {
+  margin-bottom: 0.5rem;
+}
