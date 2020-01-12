@@ -69,7 +69,8 @@
     "index-build": "sed s/_build\\\\///g index.html > _build/index.html",
     "index-watch": "watch yarn run index-build &> /dev/null",
     "start": "npm-run-all --parallel css-watch js-watch image-watch index-watch",
-    "deploy": "yarn run css-deploy && yarn run js-build && yarn run image-build && yarn run index-build"
+    "deploy": "yarn run css-deploy && yarn run js-build && yarn run image-build && yarn run index-build",
+    "patch": "git tag | sort -rV | head -n1 | awk -F. '{$NF++; OFS=\".\"; print $0}' | xargs -I. git tag -a . -m \"New patch version: .\" && git push && git push --tags"
   },
   "version": "0.0.3"
 }

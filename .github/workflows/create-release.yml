@@ -27,7 +27,7 @@ jobs:
         sed -i "s/__LAST_UPDATED__/$(date "+%Y-%m-%d")/g" index.html
 
     - name: Build bundle
-      run: yarn bundle
+      run: yarn deploy
 
     - name: Create Release
       id: create_release
