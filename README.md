@@ -12,8 +12,8 @@ yarn install
 yarn start
 ```
 
-#### Deploy 
+#### Increment patch version and release
 
 ```shell script
-yarn deploy
+yarn patch
 ```
