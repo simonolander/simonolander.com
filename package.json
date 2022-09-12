@@ -1,5 +1,5 @@
 {
-  "license": "GPL-3",
+  "license": "GPL-3.0",
   "name": "my-website",
   "repository": {
     "type": "git",
@@ -7,7 +7,10 @@
   },
   "scripts": {
     "build": "parcel",
-    "start": "npm-run-all --parallel css-watch js-watch image-watch index-watch",
+    "start": "",
     "patch": "git tag | sort -rV | head -n1 | awk -F. '{$NF++; OFS=\".\"; print $0}' | xargs -I. git tag -a . -m \"New patch version: .\" && git push && git push --tags"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
   }
 }
