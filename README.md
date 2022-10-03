@@ -1,5 +1,7 @@
 # My website
 
+Site is live here: https://www.simonolander.com
+
 #### Install
 
 ```shell script
