@@ -19,3 +19,7 @@ yarn start
 ```shell script
 yarn patch
 ```
+
+#### Ionicons
+
+For browsing: https://ionic.io/ionicons/v4
