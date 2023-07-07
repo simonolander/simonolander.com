@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="./sass/main.scss">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+  <noscript>
+    <style>
+        .if-js-enabled {
+            display: none !important;
+        }
+    </style>
+  </noscript>
 </head>
 <body>
 <section class="hero is-primary is-medium"
@@ -186,10 +193,17 @@
           </a>
           <figure>
             <iframe
+                class="if-js-enabled"
                 src="https://embed.acast.com/64246d770cfcac0011061c9d/6431608dc065610011d8f2e2" allow="autoplay"
                 width="100%"
                 height="110">
             </iframe>
+            <noscript>
+              <p>
+                You seem to have disabled Javascript for this website. That's fine, but the embedded podcast player will
+                not work.
+              </p>
+            </noscript>
           </figure>
         </div>
       </div>
