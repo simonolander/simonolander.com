@@ -20,19 +20,31 @@
           color: crimson;
       }
 
-      .original-text-block {
+      .original-block {
+          border-left: 3px solid #0073e6;
+          background-color: #f5f9fd;
           padding: 10px;
-          background-color: #eee;
-          border-radius: 5px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           margin-top: 30px;
       }
 
+      .original {
+          font-style: italic;
+          font-size: 18px;
+      }
+
       .translation {
+          padding-left: 10px;
           font-style: italic;
       }
 
+      .comment {
+          padding-left: 10px;
+      }
 
+      .subtitle {
+          margin-top: 40px;
+      }
   </style>
 </head>
 <body>
@@ -55,133 +67,135 @@
           </figure>
 
           <h4 class="subtitle">Vers 1</h4>
-          <div class="original-text-block">
-            <p class="original-text">J'ai reçu une lettre</p>
-            <p class="original-text">Il y a un mois peut-être</p>
+          <div class="original-block">
+            <p class="original">J'ai reçu une lettre</p>
+            <p class="original">Il y a un mois peut-être</p>
           </div>
           <p class="translation">Jag fick ett brev för kanske en månad sedan</p>
-          <div class="original-text-block">
-            <p class="original-text">Arrivée par erreur</p>
-            <p class="original-text">Maladresse de facteur</p>
+          <div class="original-block">
+            <p class="original">Arrivée par erreur</p>
+            <p class="original">Maladresse de facteur</p>
           </div>
           <p class="translation">Anlänt av misstag, postbudsfel</p>
-          <p>Brevet var alltså inte adresserat till honom, utan skulle till någon annan.</p>
-          <div class="original-text-block">
-            <p class="original-text">Aspergée de parfum</p>
-            <p class="original-text">Rouge à lèvres carmin</p>
+          <p class="comment">Brevet var alltså inte adresserat till honom, utan skulle till någon annan.</p>
+          <div class="original-block">
+            <p class="original">Aspergée de parfum</p>
+            <p class="original">Rouge à lèvres carmin</p>
           </div>
           <p class="translation">Parfymdoft, karminrött läppstift</p>
-          <p>Avsändaren hade sprutat parfym och gjort ett läppavtryck på kuvertet. <a
-              href="https://sv.wikipedia.org/wiki/Karmin">Karmin</a> är ett rött färgpigment, som <span class="carmine">även finns som HTML-färg</span>.
+          <p class="comment">Avsändaren hade sprutat parfym och gjort ett läppavtryck på kuvertet. <a
+              href="https://sv.wikipedia.org/wiki/Karmin">Karmin</a> är ett rött färgpigment, som ser ut <span
+              class="carmine">ungefär så här</span>.
           </p>
-          <p></p>
-          <div class="original-text-block">
-            <p class="original-text">J'aurais dû cette lettre</p>
-            <p class="original-text">Ne pas l'ouvrir peut-être</p>
+          <div class="original-block">
+            <p class="original">J'aurais dû cette lettre</p>
+            <p class="original">Ne pas l'ouvrir peut-être</p>
           </div>
           <p class="translation">Jag borde kanske inte ha öppnat brevet</p>
-          <p>...men han gjorde det ändå.</p>
+          <p class="comment">...men han gjorde det ändå.</p>
 
           <h4 class="subtitle">Refräng 1</h4>
-          <div class="original-text-block">
-            <p class="original-text">Mais moi je suis un homme</p>
-            <p class="original-text">Qui aime bien ce genre de jeu</p>
+          <div class="original-block">
+            <p class="original">Mais moi je suis un homme</p>
+            <p class="original">Qui aime bien ce genre de jeu</p>
           </div>
           <p class="translation">Men jag är en man som gillar den här sortens spel</p>
-          <p>Han är förtjust i tjejer, helt enkelt.</p>
-          <div class="original-text-block">
-            <p class="original-text">...veux bien qu'elle me nomme</p>
-            <p class="original-text">Alphonse ou Fred c'est comme elle veut</p>
+          <p class="comment">Han är förtjust i tjejer, helt enkelt.</p>
+          <div class="original-block">
+            <p class="original">...veux bien qu'elle me nomme</p>
+            <p class="original">Alphonse ou Fred c'est comme elle veut</p>
           </div>
           <p class="translation">[Jag] vill gärna att hon kallar mig Alphonse eller Fred, det är som hon vill</p>
-          <p>Han är intresserad av kvinnan som skickat brevet, och bryr sig inte om hon kallar honom namnet på den avsedda mottagaren.</p>
-          <p>Renan Luce har finurligt låtit sista stavelsen i föregående fras (jeu = spel) tjäna som första stavelsen i den här frasen (Je = Jag).</p>
-          <div class="original-text-block">
-            <p class="original-text">(Payapapa papayapa)</p>
+          <p class="comment">Han är intresserad av kvinnan som skickat brevet, och bryr sig inte om hon kallar honom
+            namnet på den avsedda mottagaren.</p>
+          <p class="comment">Renan Luce har finurligt låtit sista stavelsen i föregående fras (jeu = spel) tjäna som
+            första stavelsen i den här frasen (Je = Jag).</p>
+          <div class="original-block">
+            <p class="original">(Payapapa papayapa)</p>
           </div>
-          <p>Bara trall, mig veterligen ingen särskilt betydelse.</p>
-          <div class="original-text-block">
-            <p class="original-text">C'est comme elle veut</p>
-            <p class="original-text">(Payapapa papayapa)</p>
+          <p class="comment">Bara trall, mig veterligen ingen särskilt betydelse.</p>
+          <div class="original-block">
+            <p class="original">C'est comme elle veut</p>
+            <p class="original">(Payapapa papayapa)</p>
           </div>
           <p class="translation">Som hon vill</p>
-          <p>Repetition från förra frasen.</p>
+          <p class="comment">Repetition från förra frasen.</p>
 
           <h4 class="subtitle">Vers 2</h4>
-          <p class="original-text">Des jolies marguerites</p>
-          <p class="original-text">Sur le haut de ses "i"</p>
-          <p class="original-text">Des courbes manuscrites</p>
-          <p class="original-text">Comme dans les abbayes</p>
-          <p class="original-text">Quelques fautes d'orthographe</p>
-          <p class="original-text">Une légère dyslexie</p>
-          <p class="original-text">Et en guise de paraphe</p>
-          <p class="original-text">Ta petite blonde sexy</p>
+          <p class="original">Des jolies marguerites</p>
+          <p class="original">Sur le haut de ses "i"</p>
+          <p class="original">Des courbes manuscrites</p>
+          <p class="original">Comme dans les abbayes</p>
+          <p class="original">Quelques fautes d'orthographe</p>
+          <p class="original">Une légère dyslexie</p>
+          <p class="original">Et en guise de paraphe</p>
+          <p class="original">Ta petite blonde sexy</p>
 
           <h4 class="subtitle">Refräng 2</h4>
-          <p class="original-text">Et moi je suis un homme</p>
-          <p class="original-text">Qui aime bien ce genre de jeu</p>
-          <p class="original-text">...n'aime pas les nonnes</p>
-          <p class="original-text">Et j'en suis tombé amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
-          <p class="original-text">Amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
+          <p class="original">Et moi je suis un homme</p>
+          <p class="original">Qui aime bien ce genre de jeu</p>
+          <p class="original">...n'aime pas les nonnes</p>
+          <p class="original">Et j'en suis tombé amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
+          <p class="original">Amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
 
           <h4 class="subtitle">Vers 3</h4>
-          <p class="original-text">Elle écrit que dimanche</p>
-          <p class="original-text">Elle sera sur la falaise</p>
-          <p class="original-text">Où je l'ai prise par les hanches</p>
-          <p class="original-text">Et que dans l'hypothèse</p>
-          <p class="original-text">Où j'n'aurais pas le tact</p>
-          <p class="original-text">D'assumer mes ébats</p>
-          <p class="original-text">Elle choisira l'impact</p>
-          <p class="original-text">30 mètres plus bas</p>
+          <p class="original">Elle écrit que dimanche</p>
+          <p class="original">Elle sera sur la falaise</p>
+          <p class="original">Où je l'ai prise par les hanches</p>
+          <p class="original">Et que dans l'hypothèse</p>
+          <p class="original">Où j'n'aurais pas le tact</p>
+          <p class="original">D'assumer mes ébats</p>
+          <p class="original">Elle choisira l'impact</p>
+          <p class="original">30 mètres plus bas</p>
 
           <h4 class="subtitle">Refräng 3</h4>
-          <p class="original-text">Et moi je suis un homme</p>
-          <p class="original-text">Qui aime bien ce genre d'enjeu</p>
-          <p class="original-text">...n'veux pas qu'elle s'assomme</p>
-          <p class="original-text">Car j'en suis tombé amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
-          <p class="original-text">Amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
+          <p class="original">Et moi je suis un homme</p>
+          <p class="original">Qui aime bien ce genre d'enjeu</p>
+          <p class="original">...n'veux pas qu'elle s'assomme</p>
+          <p class="original">Car j'en suis tombé amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
+          <p class="original">Amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
 
           <h4 class="subtitle">Vers 4</h4>
-          <p class="original-text">Grâce au cachet de la poste</p>
-          <p class="original-text">D'une ville sur la Manche</p>
-          <p class="original-text">J'étais à l'avant-poste</p>
-          <p class="original-text">Au matin du dimanche</p>
-          <p class="original-text">L'endroit était désert</p>
-          <p class="original-text">Il faudra être patient</p>
-          <p class="original-text">Des blondes suicidaires</p>
-          <p class="original-text">Il n'y en a pas cent</p>
+          <p class="original">Grâce au cachet de la poste</p>
+          <p class="original">D'une ville sur la Manche</p>
+          <p class="original">J'étais à l'avant-poste</p>
+          <p class="original">Au matin du dimanche</p>
+          <p class="original">L'endroit était désert</p>
+          <p class="original">Il faudra être patient</p>
+          <p class="original">Des blondes suicidaires</p>
+          <p class="original">Il n'y en a pas cent</p>
 
           <h4 class="subtitle">Refräng 4</h4>
-          <p class="original-text">Et moi je suis un homme</p>
-          <p class="original-text">Qui aime bien ce genre d'enjeu</p>
-          <p class="original-text">...veux battre Newton</p>
-          <p class="original-text">Car j'en suis tombé amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
-          <p class="original-text">Amoureux</p>
-          <p class="original-text">(Payapapa papayapa)</p>
+          <p class="original">Et moi je suis un homme</p>
+          <p class="original">Qui aime bien ce genre d'enjeu</p>
+          <p class="original">...veux battre Newton</p>
+          <p class="original">Car j'en suis tombé amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
+          <p class="original">Amoureux</p>
+          <p class="original">(Payapapa papayapa)</p>
 
           <h4 class="subtitle">Vers 5</h4>
-          <p class="original-text">Elle surplombait la Manche</p>
-          <p class="original-text">Quand je l'ai reconnue</p>
-          <p class="original-text">J'ai saisi par la manche</p>
-          <p class="original-text">Ma petite ingénue</p>
-          <p class="original-text">Qui ne l'était pas tant</p>
-          <p class="original-text">Au regard du profil</p>
-          <p class="original-text">Qu'un petit habitant</p>
-          <p class="original-text">Lui f'sait sous le nombril</p>
+          <p class="original">Elle surplombait la Manche</p>
+          <p class="original">Quand je l'ai reconnue</p>
+          <p class="original">J'ai saisi par la manche</p>
+          <p class="original">Ma petite ingénue</p>
+          <p class="original">Qui ne l'était pas tant</p>
+          <p class="original">Au regard du profil</p>
+          <p class="original">Qu'un petit habitant</p>
+          <p class="original">Lui f'sait sous le nombril</p>
 
           <h4 class="subtitle">Refräng 5</h4>
-          <p class="original-text">Et moi je suis un homme</p>
-          <p class="original-text">Qui aime bien ce genre d'enjeu</p>
-          <p class="original-text">...veux bien qu'il me nomme</p>
-          <p class="original-text">Papa, s'il le veut</p>
-          <p class="original-text">(Payapapa papayapa)</p>
-          <p class="original-text">S'il le veut</p>
-          <p class="original-text">(Payapapa papayapa)</p>
+          <p class="original">Et moi je suis un homme</p>
+          <p class="original">Qui aime bien ce genre d'enjeu</p>
+          <p class="original">...veux bien qu'il me nomme</p>
+          <p class="original">Papa, s'il le veut</p>
+          <p class="original">(Payapapa papayapa)</p>
+          <p class="original">S'il le veut</p>
+          <p class="original">(Payapapa papayapa)</p>
         </div>
       </div>
     </div>
