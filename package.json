@@ -9,7 +9,7 @@
     "build": "parcel build index.html la-lettre.html",
     "start": "parcel --port=3000 index.html la-lettre.html",
     "clean": "rm -rf .parcel-cache dist node_modules",
-    "patch": "git tag | sort -rV | head -n1 | awk -F. '{$3++; OFS=\".\"; print $1,$2,$3}' | xargs -I. git tag -a . -m \"New patch version: .\" && git push && git push --tags"
+    "release": "git tag | grep -E '^v[0-9]+$' | tr -d v | sort -rV | head -n1 | awk '{$1++; print v$1}' | xargs -I. git tag -a . -m \"New version: .\" && git push && git push --tags"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.7.0",

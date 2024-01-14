@@ -37,20 +37,17 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
-        body: |
-          Changes in this Release
-          - First Change
-          - Second Change
+        body: See commits for change list
         draft: false
         prerelease: false
 
     - name: Upload bundle to S3
       uses: jakejarvis/s3-sync-action@v0.5.0
       with:
-        args: --acl=public-read --delete --storage-class=REDUCED_REDUNDANCY
+        args: --delete --storage-class=REDUCED_REDUNDANCY
       env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: eu-west-3 # Europe (Paris)
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_ORG }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_ORG }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_ORG }}
+        AWS_REGION: eu-north-1 # Europe (Stockholm)
         SOURCE_DIR: dist
