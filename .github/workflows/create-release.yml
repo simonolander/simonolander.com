@@ -25,6 +25,7 @@ jobs:
         tag="$(echo "${ref}" | awk -F/ '{print $NF}')"
         sed -i "s/__RELEASE_VERSION__/${tag}/g" index.html
         sed -i "s/__LAST_UPDATED__/$(date "+%Y-%m-%d")/g" index.html
+        sed -i "s/__LAST_UPDATED_INSTANT__/$(date --iso-8601=seconds)/g" index.html
 
     - name: Build bundle
       run: yarn build
