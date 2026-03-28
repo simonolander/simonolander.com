@@ -17,7 +17,7 @@ npm run dev
 #### Release
 
 ```shell script
-npm run patch
+npm run release
 ```
 
 #### Ionicons
