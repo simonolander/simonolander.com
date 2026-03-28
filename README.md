@@ -5,19 +5,19 @@ Site is live here: https://www.simonolander.org
 #### Install
 
 ```shell script
-yarn install
+npm run install
 ```
 
 #### Run locally
 
 ```shell script
-yarn start
+npm run dev
 ```
 
-#### Increment patch version and release
+#### Release
 
 ```shell script
-yarn patch
+npm run patch
 ```
 
 #### Ionicons
