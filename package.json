@@ -12,9 +12,9 @@
     "release": "git tag | grep -E '^v[0-9]+$' | tr -d v | sort -rV | head -n1 | awk '{$1++; print \"v\" $1}' | xargs -I. git tag -a . -m \"New version: .\" && git push && git push --tags"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.7.0",
-    "bulma": "0.9.4",
-    "parcel": "2.7.0"
+    "@parcel/transformer-sass": "2.16.4",
+    "bulma": "1.0.4",
+    "parcel": "2.16.4"
   },
   "dependencies": {}
 }
