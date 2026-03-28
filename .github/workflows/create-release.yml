@@ -10,14 +10,16 @@ jobs:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-
     - name: Checkout code
-      uses: actions/checkout@master
-    
-    - run: yarn install
+      uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
 
     - name: Set version and date in index.html
       run: |
@@ -28,16 +30,14 @@ jobs:
         sed -i "s/__LAST_UPDATED_INSTANT__/$(date --iso-8601=seconds)/g" index.html
 
     - name: Build bundle
-      run: yarn build
+      run: npm run build
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        name: Release ${{ github.ref_name }}
         body: See commits for change list
         draft: false
         prerelease: false
